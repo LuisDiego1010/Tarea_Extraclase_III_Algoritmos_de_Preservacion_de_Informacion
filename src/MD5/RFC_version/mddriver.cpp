@@ -158,8 +158,7 @@ static void MDTimeTrial() {
     printf("Digest = ");
     MDPrint(digest);
     printf("\nTime = %ld seconds\n", (long) (endTime - startTime));
-    printf
-            ("Speed = %ld bytes/second\n",
+    printf("Speed = %ld bytes/second\n",
              (long) TEST_BLOCK_LEN * (long) TEST_BLOCK_COUNT / (endTime - startTime));
 }
 
@@ -230,6 +229,7 @@ static void MDPrint(unsigned char digest[16])
 {
     unsigned int i;
 
-    for (i = 0; i < 16; i++)printf("%02x", digest[i])
+    for (i = 0; i < 16; i++){
         printf("%02x", digest[i]);
+    }
 }
