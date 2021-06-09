@@ -17,3 +17,7 @@ add_executable(MD5
         "src/MD5/Adapatation to c++/MD5.cpp"
         "src/MD5/Adapatation to c++/MD5.h"
         )
+add_executable(SHA1
+        "src/sha1/main.cpp"
+        "src/sha1/sha1.cpp"
+        "src/sha1/sha1.h")
